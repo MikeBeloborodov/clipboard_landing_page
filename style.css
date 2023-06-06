@@ -1,0 +1,54 @@
+/* || VARIABLES */
+:root {
+    --clr-green: hsl(171, 66%, 44%);
+    --clr-blue: hsl(233, 100%, 69%);
+    --clr-title: hsl(210, 10%, 33%);
+    --clr-paragraph: hsl(201, 11%, 66%);
+
+    --fw-regular: 400;
+    --fw-bold: 600;
+
+    --ff-main: 'Bai Jamjuree', sans-serif;
+}
+
+/* || RESET DEFAULTS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+img,
+svg {
+    display: block;
+    width: 100%;
+}
+
+/* || UTILITY CLASSES */
+/* hide something from screen reader */
+/* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: insert(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* || STYLES */
