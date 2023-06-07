@@ -98,10 +98,11 @@ footer {
     font-size: 1rem;
     letter-spacing: 0.09rem;
     box-shadow: inset 0 -0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .img-computer {
-    margin: 4.8rem 0 4rem;
+    margin: 4.8rem auto 4rem;
     max-width: 100%;
     height: auto;
     width: auto;
@@ -114,7 +115,7 @@ footer {
     margin-bottom: 12rem;
 }
 
-.features-card__flex-box-tools{
+.features-card__flex-box-tools {
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -217,3 +218,54 @@ footer {
     margin-bottom: 0.4rem;
 }
 
+@media screen and (min-width: 1080px) {
+    .buttons-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .features-card__btn {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .computer-img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        align-items: center;
+    }
+
+    .first-row {
+        grid-row: 1;
+        grid-column: 2 span;
+    }
+
+    .features-card__flex-box {
+        margin-bottom: 0;
+    }
+
+    .img-computer {
+        margin-left: -2rem;
+    }
+
+    .features-card__flex-box-tools {
+        flex-direction: row;
+    }
+
+    .partners {
+        flex-direction: row;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        max-height: 11rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .footer__social-media-flex {
+        margin:0;
+        margin-bottom: 3rem;
+    }
+}
