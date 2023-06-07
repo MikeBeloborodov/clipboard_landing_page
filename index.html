@@ -22,8 +22,22 @@
   </head>
   <body>
     <main>
-      <img class="bg-header" src="images/bg-header-mobile.png" alt="">
-      <img class="logo header" src="images/logo.svg" alt="">
+      <div class="header-img-box">
+        <img
+          class="bg-header"
+          src="images/bg-header-mobile.png"
+          alt=""
+          width="375"
+          height="363"
+        />
+        <img
+          class="logo header"
+          src="images/logo.svg"
+          alt=""
+          width="125"
+          height="125"
+        />
+      </div>
       <article class="features-card">
         <h1 class="features-card__title h1">
           A history of everything you copy
@@ -32,8 +46,10 @@
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <button class="features-card__btn green-btn">Download for iOS</button>
-        <button class="features-card__btn blue-btn">Download for Mac</button>
+        <div class="buttons-container">
+          <button class="features-card__btn green-btn">Download for iOS</button>
+          <button class="features-card__btn blue-btn">Download for Mac</button>
+        </div>
       </article>
       <article class="features-card">
         <h2 class="features-card__title h2">Keep track of your snippets</h2>
@@ -42,69 +58,136 @@
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-        <img class="img-computer" src="images/image-computer.png" alt="Image of a computer monitor.">
+        <img
+          class="img-computer"
+          src="images/image-computer.png"
+          alt="Image of a computer monitor."
+          width="752"
+          height="572"
+        />
       </article>
-      <article class="features-card">
-        <h3 class="features-card__title h3">Quick Search</h3>
-        <p class="features-card__paragraph">
-          Easily search your snippets by content, category, web address,
-          application, and more.
-        </p>
-      </article>
-      <article class="features-card">
-        <h3 class="features-card__title h3">iCloud Sync</h3>
-        <p class="features-card__paragraph">
-          Instantly saves and syncs snippets across all your devices.
-        </p>
-      </article>
-      <article class="features-card">
-        <h3 class="features-card__title h3">Complete History</h3>
-        <p class="features-card__paragraph">
-          Retrieve any snippets from the first moment you started using the app.
-        </p>
-      </article>
+      <div class="features-card__flex-box">
+        <article class="features-card">
+          <h3 class="features-card__title h3">Quick Search</h3>
+          <p class="features-card__paragraph">
+            Easily search your snippets by content, category, web address,
+            application, and more.
+          </p>
+        </article>
+        <article class="features-card">
+          <h3 class="features-card__title h3">iCloud Sync</h3>
+          <p class="features-card__paragraph">
+            Instantly saves and syncs snippets across all your devices.
+          </p>
+        </article>
+        <article class="features-card">
+          <h3 class="features-card__title h3">Complete History</h3>
+          <p class="features-card__paragraph">
+            Retrieve any snippets from the first moment you started using the
+            app.
+          </p>
+        </article>
+      </div>
       <article class="features-card">
         <h2 class="features-card__title h2">Access Clipboard anywhere</h2>
         <p class="features-card__paragraph">
           Whether you're on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
-        <img class="img-devices" src="images/image-devices.png" alt="Image of a phone and a tablet computer.">
+        <img
+          class="img-devices"
+          src="images/image-devices.png"
+          alt="Image of a phone and a tablet computer."
+          width="905"
+          height="575"
+        />
       </article>
       <article class="features-card">
         <h2 class="features-card__title h2">Supercharge your workflow</h2>
         <p>We've got the tools to boost your productivity.</p>
       </article>
-      <article>
-        <img class="img-features" src="images/icon-blacklist.svg" alt="">
-        <h3 class="features-card__title h3">Create blacklists</h3>
-        <p class="features-card__paragraph">
-          Ensure sensitive information never makes its way to your clipboard by
-          excluding certain sources.
-        </p>
-      </article>
-      <article class="features-card">
-        <img class="img-features" src="images/icon-text.svg" alt="">
-        <h3 class="features-card__title h3">Plain text snippets</h3>
-        <p class="features-card__paragraph">
-          Remove unwanted formatting from copied text for a consistent look.
-        </p>
-      </article>
-      <article class="features-card">
-        <img class="img-features" src="images/icon-preview.svg" alt="">
-        <h3 class="features-card__title h3">Sneak preview</h3>
-        <p class="features-card__paragraph">
-          Quick preview of all snippets on your Clipboard for easy access.
-        </p>
-      </article>
+      <div class="features-card__flex-box-tools">
+        <article class="features-card">
+          <img
+            class="img-features"
+            src="images/icon-blacklist.svg"
+            alt=""
+            width="44"
+            height="40"
+          />
+          <h3 class="features-card__title h3">Create blacklists</h3>
+          <p class="features-card__paragraph">
+            Ensure sensitive information never makes its way to your clipboard
+            by excluding certain sources.
+          </p>
+        </article>
+        <article class="features-card">
+          <img
+            class="img-features"
+            src="images/icon-text.svg"
+            alt=""
+            width="36"
+            height="32"
+          />
+          <h3 class="features-card__title h3">Plain text snippets</h3>
+          <p class="features-card__paragraph">
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </article>
+        <article class="features-card">
+          <img
+            class="img-features"
+            src="images/icon-preview.svg"
+            alt=""
+            width="50"
+            height="32"
+          />
+          <h3 class="features-card__title h3">Sneak preview</h3>
+          <p class="features-card__paragraph">
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </article>
+      </div>
       <div class="partners">
-        <img class="partners__img" src="images/logo-google.png" alt="">
+        <img
+          class="partners__img"
+          src="images/logo-google.png"
+          alt=""
+          width="165"
+          height="49"
+        />
         <p class="visually-hidden">Google</p>
-        <img class="partners__img" src="images/logo-ibm.png" alt="">
+        <img
+          class="partners__img"
+          src="images/logo-ibm.png"
+          alt=""
+          width="139"
+          height="51"
+        />
         <p class="visually-hidden">IBM</p>
-        <img class="partners__img" src="images/logo-hp.png" alt="">
+        <img
+          class="partners__img"
+          src="/images/logo-microsoft.png"
+          alt=""
+          width="161"
+          height="35"
+        />
+        <p class="visually-hidden">Microsoft</p>
+        <img
+          class="partners__img"
+          src="images/logo-hp.png"
+          alt=""
+          width="135"
+          height="56"
+        />
         <p class="visually-hidden">HP</p>
-        <img class="partners__img" src="images/logo-vector-graphics.png" alt="">
+        <img
+          class="partners__img"
+          src="images/logo-vector-graphics.png"
+          alt=""
+          width="125"
+          height="30"
+        />
         <p class="visually-hidden">Vector Graphics</p>
       </div>
       <article class="features-card">
@@ -113,26 +196,39 @@
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you're ready to start adding to your clipboard.
         </p>
-        <button class="features-card__btn green-btn">Download for iOS</button>
-        <button class="features-card__btn blue-btn">Download for Mac</button>
+        <div class="buttons-container near-footer">
+          <button class="features-card__btn green-btn">Download for iOS</button>
+          <button class="features-card__btn blue-btn">Download for Mac</button>
+        </div>
       </article>
     </main>
     <footer>
-      <img class="footer__logo" src="images/logo.svg" alt="">
+      <img
+        class="footer__logo"
+        src="images/logo.svg"
+        alt=""
+        width="125"
+        height="125"
+      />
       <a class="footer__link" href="/faq">FAQs</a>
       <a class="footer__link" href="/contacts">Contact Us</a>
       <a class="footer__link" href="/ppolicy">Privacy Policy</a>
       <a class="footer__link" href="/press">Press Kit</a>
       <a class="footer__link" href="/guide">Install Guide</a>
-      <a class="footer__link icon" href="https://facebook.com"
-        ><span class="visually-hidden">Facebook</span></a
-      >
-      <a class="footer__link icon" href="https://twitter.com"
-        ><span class="visually-hidden">Twitter</span></a
-      >
-      <a class="footer__link icon" href="https://instargam.com"
-        ><span class="visually-hidden">Instagram</span></a
-      >
+      <div class="footer__social-media-flex">
+        <a class="footer__link icon" href="https://facebook.com">
+          <img src="images/icon-facebook.svg" alt="" width="24" height="24" />
+          <span class="visually-hidden">Facebook</span>
+        </a>
+        <a class="footer__link icon" href="https://twitter.com">
+          <img src="images/icon-twitter.svg" alt="" width="24" height="20" />
+          <span class="visually-hidden">Twitter</span>
+        </a>
+        <a class="footer__link icon" href="https://instargam.com">
+          <img src="images/icon-instagram.svg" alt="" width="24" height="24" />
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </div>
     </footer>
   </body>
 </html>
